@@ -36,6 +36,7 @@ public class ProductService {
         repository.deleteById(id);
         return "product removed !! " + id;
     }
+    //product service implementation
 
     public Product updateProduct(Product product) {
         Product existingProduct = repository.findById(product.getId()).orElse(null);
